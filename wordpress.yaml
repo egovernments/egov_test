@@ -1,0 +1,192 @@
+---
+# Source: wordpress/templates/pv.yaml
+apiVersion: v1
+kind: "PersistentVolume"
+metadata:
+  name: wordpress-data
+  labels:
+    app: wordpress
+    group: web
+spec:
+  capacity:
+    storage: "10Gi" 
+  accessModes:
+    - "ReadWriteOnce"
+  persistentVolumeReclaimPolicy: Recycle
+  claimRef:
+    namespace: egov
+    name: wordpress-data
+  awsElasticBlockStore:
+    volumeID: vol-02b9bae47bacc586b
+#    zone: ap-south-1b
+    fsType: ext4
+---
+# Source: wordpress/templates/pvc.yaml
+apiVersion: "v1"
+kind: PersistentVolumeClaim
+metadata:
+  name: wordpress-data
+  namespace: egov
+  labels:
+    app: wordpress
+    group: web
+spec:
+  accessModes:
+   - "ReadWriteOnce"
+  resources:
+    requests:
+        storage: "10Gi"
+  storageClassName: "default"
+  volumeMode: "Filesystem"
+  volumeName: wordpress-data
+---
+# Source: wordpress/templates/service.yaml
+# service.yaml---
+apiVersion: v1
+kind: Service
+metadata:
+  name: wordpress
+  namespace: egov  
+  annotations: 
+  labels:
+    app: wordpress      
+    group: web   
+spec:
+  selector:
+    app: wordpress      
+    group: web    
+  ports:
+  - port: 80
+    targetPort: 80
+---
+# Source: wordpress/templates/deployment.yaml
+# deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wordpress
+  namespace: egov
+  labels:
+    app: wordpress      
+    group: web   
+spec:
+  selector:
+    matchLabels:
+      app: wordpress      
+      group: web
+  strategy:
+    rollingUpdate:
+      maxUnavailable: 0     
+  replicas: 1
+  template:
+    metadata:  
+      annotations:
+        deployment-timestamp: "20200611012507"    
+      labels:
+        app: wordpress      
+        group: web            
+    spec:     
+      volumes:
+        - name: wordpress-data
+          persistentVolumeClaim:
+            claimName: wordpress-data
+        
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100
+            podAffinityTerm:
+              topologyKey: "failure-domain.beta.kubernetes.io/zone"
+              labelSelector:
+                matchLabels:
+                  app: wordpress      
+                  group: web     
+      initContainers:            
+      containers:      
+        - name: wordpress
+          image: nikeshumredkar/wordpress:latest
+          imagePullPolicy: IfNotPresent             
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP              
+          readinessProbe:
+            httpGet:
+                path: "/wp-login.php"
+                port: 80
+            initialDelaySeconds: 30
+            timeoutSeconds: 3
+            periodSeconds: 30
+            successThreshold: 1
+            failureThreshold: 5        
+             
+          livenessProbe:
+            httpGet:
+                path: "/wp-login.php"
+                port: 80
+            initialDelaySeconds: 30
+            timeoutSeconds: 3
+            periodSeconds: 60
+            successThreshold: 1
+            failureThreshold: 5
+            
+          lifecycle:
+            preStop:
+              exec:
+                command:
+                - sh
+                - -c
+                - sleep 10
+          volumeMounts:
+            - mountPath: /var/www/html
+              name: wordpress-data
+              subPath: html
+                                     
+          env:
+            - name: ALLOW_EMPTY_PASSWORD
+              value: "true"
+            - name: WORDPRESS_DB_HOST
+              value: "wordpress-mysql.egov"
+            - name: WORDPRESS_DB_NAME
+              value: "wordpress"
+            - name: WORDPRESS_DB_USER
+              value: "root"
+            - name: WORDPRESS_DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: wordpress-mysql
+                  key: mysql-password
+            - name: WORDPRESS_USERNAME
+              value: "admin"
+            - name: WORDPRESS_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: wordpress
+                  key: wordpress-password
+            - name: WORDPRESS_EMAIL
+              value: "nikesh.umredkar@egovernments.org"
+            - name: WORDPRESS_FIRST_NAME
+              value: "FirstName"
+            - name: WORDPRESS_LAST_NAME
+              value: "LastName"
+            - name: WORDPRESS_HTACCESS_OVERRIDE_NONE
+              value: "false"
+            - name: WORDPRESS_HTACCESS_PERSISTENCE_ENABLED
+              value: "false"
+            - name: WORDPRESS_BLOG_NAME
+              value: "User's Blog!"
+            - name: WORDPRESS_SKIP_INSTALL
+              value: "false"
+            - name: WORDPRESS_SCHEME
+              value: "http"
+                                                 
+          resources:
+            limits: 
+              memory: 512Mi
+              cpu: 300m
+            requests:
+              memory: 512Mi
+              cpu: 300m
+---
+# Source: wordpress/templates/ingress.yaml
+# ingress.yaml
