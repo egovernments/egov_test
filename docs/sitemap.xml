@@ -3,129 +3,66 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://egovernments.github.io/egov_test/basics/</loc>
-    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+    <loc>https://egovernments.github.io/egov_test/getting_started/</loc>
+    <lastmod>2018-04-28T12:07:15+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://egovernments.github.io/egov_test/cont/pages/</loc>
-    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+    <loc>https://egovernments.github.io/egov_test/getting_started/manage_projects/</loc>
+    <lastmod>2018-04-28T12:07:15+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://egovernments.github.io/egov_test/cont/</loc>
-    <lastmod>2020-06-01T13:31:12+01:00</lastmod>
+    <loc>https://egovernments.github.io/egov_test/requirements/</loc>
+    <lastmod>2018-04-28T12:07:15+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://egovernments.github.io/egov_test/cont/archetypes/</loc>
+    <loc>https://egovernments.github.io/egov_test/installation/</loc>
   </url>
   
   <url>
-    <loc>https://egovernments.github.io/egov_test/cont/archetypes.fr/</loc>
+    <loc>https://egovernments.github.io/egov_test/upgrading/</loc>
+    <lastmod>2018-10-17T14:35:34+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://egovernments.github.io/egov_test/basics/requirements/</loc>
+    <loc>https://egovernments.github.io/egov_test/getting_started/create_cluster/</loc>
+    <lastmod>2018-04-28T12:07:15+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://egovernments.github.io/egov_test/cont/markdown/</loc>
-    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+    <loc>https://egovernments.github.io/egov_test/concepts/</loc>
   </url>
   
   <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/</loc>
-    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+    <loc>https://egovernments.github.io/egov_test/monitoring/</loc>
   </url>
   
   <url>
-    <loc>https://egovernments.github.io/egov_test/cont/markdown.fr/</loc>
-    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+    <loc>https://egovernments.github.io/egov_test/advanced/</loc>
   </url>
   
   <url>
-    <loc>https://egovernments.github.io/egov_test/basics/installation/</loc>
+    <loc>https://egovernments.github.io/egov_test/operation/</loc>
   </url>
   
   <url>
-    <loc>https://egovernments.github.io/egov_test/cont/syntaxhighlight/</loc>
-    <lastmod>2020-06-01T13:31:12+01:00</lastmod>
+    <loc>https://egovernments.github.io/egov_test/getting_started/manage_cluster/</loc>
+    <lastmod>2018-04-28T12:07:15+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://egovernments.github.io/egov_test/basics/configuration/</loc>
-    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+    <loc>https://egovernments.github.io/egov_test/changelog/</loc>
   </url>
   
   <url>
-    <loc>https://egovernments.github.io/egov_test/cont/menushortcuts/</loc>
-    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/cont/menushortcuts.fr/</loc>
-    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/basics/style-customization/</loc>
-    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/cont/icons/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/cont/i18n/</loc>
-    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/cont/tags/</loc>
-    <lastmod>2018-11-29T08:41:44+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/cont/tags.fr/</loc>
-    <lastmod>2018-11-29T08:41:44+01:00</lastmod>
+    <loc>https://egovernments.github.io/egov_test/tutorials/</loc>
   </url>
   
   <url>
     <loc>https://egovernments.github.io/egov_test/</loc>
-    <lastmod>2020-06-01T13:31:12+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/tags/documentation/</loc>
-    <lastmod>2018-11-29T08:41:44+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/tags/</loc>
-    <lastmod>2018-11-29T08:41:44+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/tags/tutorial/</loc>
-    <lastmod>2018-11-29T08:41:44+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/attachments/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/attachments.fr/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/button/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/button.fr/</loc>
+    <lastmod>2018-10-17T14:35:34+02:00</lastmod>
   </url>
   
   <url>
@@ -133,103 +70,7 @@
   </url>
   
   <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/children/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/credits/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/credits.fr/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/expand/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/expand.fr/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/mermaid/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/mermaid.fr/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/notice/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/notice.fr/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/children/children-1/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/children/children-1/children-1-1/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/children/children-1/children-1-1/children-1-1-1/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/children/children-2/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/children/children-3/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/children/children-4/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/children/test/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/children/test.fr/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/children/children-2/test3/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/children/children-2/test3.fr/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/showcase/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/siteparam/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/shortcodes/siteparam.fr/</loc>
-  </url>
-  
-  <url>
-    <loc>https://egovernments.github.io/egov_test/vitrine/</loc>
+    <loc>https://egovernments.github.io/egov_test/tags/</loc>
   </url>
   
 </urlset>

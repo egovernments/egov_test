@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Manage a Cluster on Documentation for Hugo Learn Theme</title>
+    <link>https://egovernments.github.io/egov_test/getting_started/manage_cluster/</link>
+    <description>Recent content in Manage a Cluster on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 28 Apr 2018 12:07:15 +0200</lastBuildDate>
+    
+	<atom:link href="https://egovernments.github.io/egov_test/getting_started/manage_cluster/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

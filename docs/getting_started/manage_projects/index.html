@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/egov_test/images/favicon.png" type="image/png">
 
-    <title>Digit Documentation :: Documentation for Hugo Learn Theme</title>
+    <title>Manage a Project :: Documentation for Hugo Learn Theme</title>
 
     
     <link href="/egov_test/css/nucleus.css?1597127566" rel="stylesheet">
@@ -40,7 +40,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/egov_test/">
+  <body class="" data-url="/egov_test/getting_started/manage_projects/">
     <nav id="sidebar" class="">
 
 
@@ -82,7 +82,7 @@
   
     
     <li data-nav-id="/egov_test/getting_started/" title="Getting Started" class="dd-item 
-        
+        parent
         
         
         ">
@@ -111,8 +111,8 @@
   
     
     <li data-nav-id="/egov_test/getting_started/manage_projects/" title="Manage a Project" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/egov_test/getting_started/manage_projects/">
@@ -452,23 +452,132 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/loodse/docs/edit/master/content/getting_started/manage_projects/_index.en.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/egov_test/'>Digit Documentation</a> > <a href='/egov_test/getting_started/'>Getting Started</a> > Manage a Project
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#step-1--create-a-project">Step 1 – Create a Project</a></li>
+        <li><a href="#step-2--select-your-current-project">Step 2 – Select Your Current Project</a></li>
+        <li><a href="#step-3--create-a-cluster">Step 3 – Create a Cluster</a></li>
+        <li><a href="#step-4--manage-project-members">Step 4 – Manage Project Members</a></li>
+        <li><a href="#step-5---manage-project-service-accounts">Step 5 - Manage Project Service Accounts</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Manage a Project
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="digit-documentation">Digit Documentation</h1>
+
+	<p>Kubermatic organizes your clusters into projects. Projects allow you to share clusters with other users and make it easier to collaborate.</p>
+<h3 id="step-1--create-a-project">Step 1 – Create a Project</h3>
+<p>After you log in to Kubermatic, you will be greeted with the list of all projects you created or have been given access to. When first using Kubermatic, the list will be empty and you will need to create your first project.</p>
+<p><img src="/img/kubermatic/v2.14/getting_started/manage_projects/projects-empty.png" alt="Empty project list"></p>
+<p>Click on the button above the table or the link below to table to create your first project. Give it a descriptive name and click &ldquo;Save&rdquo;.</p>
+<p><img src="/img/kubermatic/v2.14/getting_started/manage_projects/projects-add.png" alt="Add project dialog"></p>
+<p>After a short moment, your project will be ready.</p>
+<h3 id="step-2--select-your-current-project">Step 2 – Select Your Current Project</h3>
+<p>To manage clusters, you need to select in which project you would like to work. This can be achieved by either clicking the project in the project list or by using the dropdown in the top-left corner (it is visible only when you are already in one of the projects).</p>
+<p><img src="/img/kubermatic/v2.14/getting_started/manage_projects/projects-list.png" alt="Project list"></p>
+<p>After selecting the current project, the menu items for managing clusters, members and service accounts become active.</p>
+<h3 id="step-3--create-a-cluster">Step 3 – Create a Cluster</h3>
+<p>Refer to the <a href="../create_cluster">cluster documentation</a> for more information on how to create and manage clusters.</p>
+<h3 id="step-4--manage-project-members">Step 4 – Manage Project Members</h3>
+<p>After selecting a project like in step 2, click on &ldquo;Members&rdquo; in the menu on the left to see the list of active members. If you are the owner, you can add and remove members in your project. To add a member, just like adding a project or a cluster, use the button above the member list. Add the e-mail address <em>of an existing user</em> and define their role in the project.</p>
+<p><img src="/img/kubermatic/v2.14/getting_started/manage_projects/projects-member.png" alt="Add member dialog"></p>
+<ul>
+<li><strong>Editors</strong> have write access to your project and can manage clusters, nodes and SSH keys.</li>
+<li><strong>Viewers</strong> have read-only access and can only view the existing resources.</li>
+</ul>
+<p>You can change the role for a user or remove them altogether at any time.</p>
+<p>After adding a user to a project, the project will immediately show up in the user&rsquo;s project list.</p>
+<h3 id="step-5---manage-project-service-accounts">Step 5 - Manage Project Service Accounts</h3>
+<p>After selecting a project like in step 2, click on &ldquo;Service Accounts&rdquo; in the menu on the left to see the list of active service accounts. If you are the owner of the project, you can add and remove service accounts and manage tokens that belong to them as well. To add a service account, just like adding a project or a cluster, use the button above the service account list. Add the name and select the group to assign.</p>
+<p><img src="/img/kubermatic/v2.14/getting_started/manage_projects/projects-sa.png" alt="Add service account dialog"></p>
+<ul>
+<li><strong>Editors</strong> have write access to your project and can manage clusters, nodes and SSH keys.</li>
+<li><strong>Viewers</strong> have read-only access and can only view the existing resources.</li>
+</ul>
+<p>You can change the role for a service account or remove them altogether at any time.</p>
+
+
+
+
+
+<footer class=" footline" >
 	
-  
+</footer>
+
         
         </div> 
         
@@ -500,8 +609,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -517,6 +624,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -533,6 +641,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -717,8 +828,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/egov_test/getting_started/" title="Getting Started"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/egov_test/getting_started/" title="Getting Started" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/egov_test/getting_started/create_cluster/" title="Create a Cluster" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -756,4 +869,3 @@
 </script>
   </body>
 </html>
-

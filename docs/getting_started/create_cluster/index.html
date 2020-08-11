@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/egov_test/images/favicon.png" type="image/png">
 
-    <title>Digit Documentation :: Documentation for Hugo Learn Theme</title>
+    <title>Create a Cluster :: Documentation for Hugo Learn Theme</title>
 
     
     <link href="/egov_test/css/nucleus.css?1597127566" rel="stylesheet">
@@ -40,7 +40,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/egov_test/">
+  <body class="" data-url="/egov_test/getting_started/create_cluster/">
     <nav id="sidebar" class="">
 
 
@@ -82,7 +82,7 @@
   
     
     <li data-nav-id="/egov_test/getting_started/" title="Getting Started" class="dd-item 
-        
+        parent
         
         
         ">
@@ -137,8 +137,8 @@
   
     
     <li data-nav-id="/egov_test/getting_started/create_cluster/" title="Create a Cluster" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/egov_test/getting_started/create_cluster/">
@@ -452,23 +452,132 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/loodse/docs/edit/master/content/getting_started/create_cluster/_index.en.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/egov_test/'>Digit Documentation</a> > <a href='/egov_test/getting_started/'>Getting Started</a> > Create a Cluster
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#create-a-cluster">Create a Cluster</a>
+      <ul>
+        <li><a href="#step-1--select-your-project">Step 1 – Select Your Project</a></li>
+        <li><a href="#step-2--specify-the-cluster-name-and-kubernetes-version">Step 2 – Specify the Cluster Name and Kubernetes Version</a></li>
+        <li><a href="#step-3--choose-a-cloud-provider-for-your-kubernetes-nodes">Step 3 – Choose a Cloud Provider for Your Kubernetes Nodes</a></li>
+        <li><a href="#step-4--select-the-datacenter-of-your-cloud-provider">Step 4 – Select the Datacenter of Your Cloud Provider</a></li>
+        <li><a href="#step-5--enter-your-provider-credentials-and-configure-your-worker-nodes">Step 5 – Enter Your Provider Credentials and Configure Your Worker Nodes</a></li>
+        <li><a href="#step-6--review-your-configuration-settings-and-confirm-cluster-creation">Step 6 – Review Your Configuration Settings and Confirm Cluster Creation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Create a Cluster
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="digit-documentation">Digit Documentation</h1>
+
+	<h2 id="create-a-cluster">Create a Cluster</h2>
+
+<div class="notices note" ><p>You can try setting up a cluster by yourself using our demo at <a href="https://cloud.kubermatic.io">cloud.kubermatic.io</a>!</p>
+</div>
+
+<h3 id="step-1--select-your-project">Step 1 – Select Your Project</h3>
+<p>Before you can manage clusters or SSH keys, select your current project by using the project list after you logged in or use the dropdown in the top left corner of the page. After choosing the project, the relevant menu items will become active.</p>
+<p><img src="/img/kubermatic/v2.14/getting_started/manage_projects/projects-list.png" alt="Wizard cluster specification step"></p>
+<p>Go to clusters view by clicking on &ldquo;Clusters&rdquo; menu entry and then click on the &ldquo;Add Cluster&rdquo; button in the top right corner to go to the cluster wizard.</p>
+<h3 id="step-2--specify-the-cluster-name-and-kubernetes-version">Step 2 – Specify the Cluster Name and Kubernetes Version</h3>
+<p>The cluster name is how you will identify your Kubernetes cluster instance. Choose a name that is easy for you to remember. You must also select your desired Kubernetes version.</p>
+<p><img src="/img/kubermatic/v2.14/getting_started/create_cluster/wizard-spec.png" alt="Wizard cluster specification step"></p>
+<h3 id="step-3--choose-a-cloud-provider-for-your-kubernetes-nodes">Step 3 – Choose a Cloud Provider for Your Kubernetes Nodes</h3>
+<p>Choose a cloud provider for your Kubernetes nodes to be deployed by Kubermatic. Your nodes can be placed in any cloud you like.</p>
+<p><img src="/img/kubermatic/v2.14/getting_started/create_cluster/wizard-provider.png" alt="Wizard provider step"></p>
+<h3 id="step-4--select-the-datacenter-of-your-cloud-provider">Step 4 – Select the Datacenter of Your Cloud Provider</h3>
+<p>This is the datacenter of your cloud provider. Your worker nodes will get deployed there.</p>
+<p><img src="/img/kubermatic/v2.14/getting_started/create_cluster/wizard-dc.png" alt="Wizard datacenter step"></p>
+<h3 id="step-5--enter-your-provider-credentials-and-configure-your-worker-nodes">Step 5 – Enter Your Provider Credentials and Configure Your Worker Nodes</h3>
+<p>Enter your provider specific credentials so that Kubermatic can configure your worker machines and integrate them into your cluster.</p>
+
+<div class="notices tip" ><p>This step varies depending on the selected provider! You will be asked for different provider credentials when choosing AWS or Google for example.</p>
+</div>
+
+<p><img src="/img/kubermatic/v2.14/getting_started/create_cluster/wizard-settings.png" alt="Wizard settings step"></p>
+<h3 id="step-6--review-your-configuration-settings-and-confirm-cluster-creation">Step 6 – Review Your Configuration Settings and Confirm Cluster Creation</h3>
+<p>Check whether all your configuration settings are correct and create your cluster!</p>
+<p><img src="/img/kubermatic/v2.14/getting_started/create_cluster/wizard-summary.png" alt="Wizard summary step"></p>
+<p>Please note that depending on the capacities in the seed cluster and the chosen cloud provider, cluster creation can take up to a few minutes until your nodes are ready.</p>
+
+
+
+
+
+<footer class=" footline" >
 	
-  
+</footer>
+
         
         </div> 
         
@@ -500,8 +609,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -517,6 +624,26 @@
             
             
                 
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -534,21 +661,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
+                        
                     
                 
                 
@@ -717,8 +831,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/egov_test/getting_started/manage_projects/" title="Manage a Project"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/egov_test/getting_started/" title="Getting Started" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/egov_test/getting_started/manage_cluster/" title="Manage a Cluster" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -756,4 +872,3 @@
 </script>
   </body>
 </html>
-
